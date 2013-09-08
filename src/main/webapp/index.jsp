@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="https://always-a-developer-edition.na9.force.com/resource/1371244154000/chatter_io_js_1_1/chatterio.css">
@@ -259,7 +260,7 @@
   $(function(){
     config.popup = true;
     config.cacheTokenInSessionStorage = true;
-    config.clientId = '<% System.getenv("client_id")!=null?
+    config.clientId = '<%= System.getenv("client_id")!=null?
     								System.getenv("client_id"):
     								"3MVG9y6x0357HlefnLzrysj7TpflcJ5dXrCqVhymraRe7bKROKaPfSc8GF0di.Tk8lQq11cx_ntV3jUkdzJzV" 
     					%>';
