@@ -259,7 +259,7 @@
   $(function(){
     config.popup = true;
     config.cacheTokenInSessionStorage = true;
-    config.clientId = '3MVG9y6x0357HlefnLzrysj7TpflcJ5dXrCqVhymraRe7bKROKaPfSc8GF0di.Tk8lQq11cx_ntV3jUkdzJzV';
+    config.clientId = System.getenv("client_id")!=null?System.getenv("client_id"):'3MVG9y6x0357HlefnLzrysj7TpflcJ5dXrCqVhymraRe7bKROKaPfSc8GF0di.Tk8lQq11cx_ntV3jUkdzJzV';
     config.callbackPath = undefined;
 
     force.oauth.ready(config); 
